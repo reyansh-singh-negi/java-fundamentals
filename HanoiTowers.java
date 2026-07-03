@@ -17,9 +17,10 @@ public class HanoiTowers
     public static void main(String args[])
     {
         HanoiTowers ob = new HanoiTowers();
-        Scanner sc = new Scanner(System.in);
+        Scanner sc1 = new Scanner(System.in);
         System.out.println("Enter the number of discs you want in the Tower of Hanoi");
-        int n = sc.nextInt();
+        int n = sc1.nextInt();
         ob.Hanoi(n,"Source","Helper","Destination");
+        sc1.close();
     }
 }
